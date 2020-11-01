@@ -4,7 +4,8 @@
 
 h1 {
 	text-align: center;
-	font-weight: bold;
+	font-weight: bolder;
+	font-size: 72px;
 }
 #montra  {
 	font-weight: bolder;
@@ -12,9 +13,10 @@ h1 {
     background: -webkit-linear-gradient(#FFFF02, #FF0202);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-bottom: 30px;
 }
 .mission {
-	margin: auto 20px;
+	margin: auto;
 }
 #FHamburger {
 	padding: 10px;
@@ -27,3 +29,123 @@ h1 {
 	color: red;
 	text-align: center;
 }
+#video {
+	padding: 30px;
+}
+.Burgers {
+	font-weight: bold;
+	text-align: center;
+	margin-left: -50px;
+
+}
+#Subtitle {
+	padding: 10px;
+	background: -webkit-linear-gradient(#FF0202, #FFFF02);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fourthItem {
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#combos {
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imported-stuff-follows {
+
+}
+
+body {
+	background-color: #937B5F;
+}
+
+
+.jumbotron {
+	
+
+}
+
+.jumbotron h1 {
+	position: absolute;
+	top:18;
+	left:0;
+	padding-left: 20px;
+	color: #F7FAFE;
+}
+
+.mission {
+	background-color: #323232;
+	color: #F7FAFE;
+	margin-top: 30px;
+	
+}
+
+.mission h3 {
+	font-family:'Raleway' 'sans-serif';
+	padding: 20px;
+	padding-bottom: 40px;
+	text-align: center;
+	position: center;
+
+}
+
+.order-button {
+  margin: auto;
+  width: 25%;
+  padding: 10px;
+}
+
+
+.features {
+	padding: 5px;
+}
+
+.features p {
+	font-family: 'Muli' 'sans-serif';
+	text-align: center;
+	color:#323232;
+	font-size: 1.2em;
+	padding: 20px;
+}
+
+
+footer {
+	background-color: #D64541;
+	position: absolute;
+	width: 100%;
+	height: auto;
+}
+
+footer ul li {
+	display: inline-block;
+	list-style: none;
+	float: right;
+	
+}
+
+footer p {
+	float: center;
+}
+
+footer a,
+footer p {
+
+	color:#fff;
+	vertical-align: middle;
+
+
+}
+
+
+/********************
+MEDIA QUERIES
+********************/
+@media screen and (max-width: 776px) {
+	.features img {
+		max-width: 90%;
+		margin: auto;
+	}
