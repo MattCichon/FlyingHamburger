@@ -17,6 +17,21 @@
     <!-- Animation CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
+    <style>
+    ::placeholder {
+      color: red;
+      opacity: 1; /* Firefox */
+    }
+
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: red;
+    }
+
+    ::-ms-input-placeholder { /* Microsoft Edge */
+    color: red;
+    }
+    </style>
+
     <!-- Title -->
     <title>Sides!</title>
 
@@ -55,39 +70,102 @@
       <h1 class="animated fadeInDown" id="FHamburger"> Flying Hamburgers! </h1>
     </div>
 
-    <!-- Burgers -->
-    <div class="jumbotron-fluid text-center">
-      <h1 class="animated fadeInUp" id="Subtitle"> The Sides! </h1>
-    </div>
-    <div class="container features">
+    <!-- Order Form -->
+
+  <section class="order-form my-4 mx-4">
+    <div class="container pt-4">
+
       <div class="row">
-        <div class="col-xs-12 col-sm-3">
-            <img class="img-fluid" src="assets/fries.jpg">
-          <p class="Burgers"> Curly Fries
-            <br>A basket of curly fries with "squirrel Sauce"
-            <br>$10</p> 
-      </div>
-      <div class="col-xs-12 col-sm-3">
-          <img class="img-fluid" src="assets/BaconRings.jpg">
-          <p class="Burgers"> Bacon Wrapped Onion Rings
-          <br>Onion rings wrapped in bacon with "squirrel sauce"
-          <br>$15</p>
-      </div>
-        <div class="col-xs-12 col-sm-3">
-          <img class="img-fluid" src="assets/CheeseStix.jpg">
-          <p class="Burgers"> "3 Cheese" Stix
-            <br>Cheddar, Mozzarella, or Brie. Who knows which is which?
-            <br>$15</p>
+        <div class="col-12">
+          <h1 class="animated fadeInUp" id="Subtitle">Order Delicious Hamburgers NOW!</h1>
+          <span>The squirrels are waiting</span>
+          <hr class="mt-1">
         </div>
-          <div class="col-xs-12 col-sm-3">
-            <img class="img-fluid" src="assets/PizzaRollNachos.jpg">
-          <p class="Burgers"> Pizza Rolls Nachos
-            <br>Pizza rolls covered in queso, tomatoes, green onions, and black olives.
-            <br>Comes with "squirrel sauce" and Texas Pete.
-            <br>$20</p> 
+        <div class="col-12">
+
+          <div class="row mx-4">
+            <div class="col-12 mb-2">
+              <label class="order-form-label">Name</label>
+            </div>
+            <div class="col-12 col-sm-6">
+              <input class="order-form-input" placeholder="First">
+            </div>
+            <div class="col-12 col-sm-6 mt-2 mt-sm-0">
+              <input class="order-form-input" placeholder="Last">
+            </div>
+          </div>
+
+          <div class="row mt-3 mx-4">
+            <div class="col-12">
+              <label class="order-form-label">Type first order here</label>
+            </div>
+            <div class="col-12">
+              <input class="order-form-input" placeholder=" ">
+            </div>
+          </div>
+
+          <div class="row mt-3 mx-4">
+            <div class="col-12">
+              <label class="order-form-label">Type next order here</label>
+            </div>
+            <div class="col-12">
+              <input class="order-form-input" placeholder=" ">
+            </div>
+          </div>
+
+          <div class="row mt-3 mx-4">
+            <div class="col-12">
+              <label class="order-form-label" for="date-picker-example">Date</label>
+            </div>
+            <div class="col-12">
+              <input class="order-form-input datepicker" placeholder="Selected date" type="text"
+                id="date-picker-example">
+            </div>
+          </div>
+
+          <div class="row mt-3 mx-4">
+            <div class="col-12">
+              <label class="order-form-label">Adress</label>
+            </div>
+            <div class="col-12">
+              <input class="order-form-input" placeholder="Street Address">
+            </div>
+            <div class="col-12 mt-2">
+              <input class="order-form-input" placeholder="Street Address Line 2">
+            </div>
+            <div class="col-12 col-sm-6 mt-2 pr-sm-2">
+              <input class="order-form-input" placeholder="City">
+            </div>
+            <div class="col-12 col-sm-6 mt-2 pl-sm-0">
+              <input class="order-form-input" placeholder="Region">
+            </div>
+            <div class="col-12 col-sm-6 mt-2 pr-sm-2">
+              <input class="order-form-input" placeholder="Postal / Zip Code">
+            </div>
+            <div class="col-12 col-sm-6 mt-2 pl-sm-0">
+              <input class="order-form-input" placeholder="Country">
+            </div>
+          </div>
+
+          <div class="row mt-3 mx-4">
+            <div class="col-12">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" name="validation" id="validation" value="1">
+                <label for="validation" class="form-check-label">I know what I need to know</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-12">
+              <button type="button" id="btnSubmit" class="btn btn-dark d-block mx-auto btn-submit">Submit</button>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
+  </section>
 
     <!-- Montra -->
     <div class="jumbotron-fluid text-center">
