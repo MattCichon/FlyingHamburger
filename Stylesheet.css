@@ -115,7 +115,7 @@ body {
 
 footer {
 	background-color: #D64541;
-	position: center;
+	position: absolute;
 	width: 100%;
 	height: auto;
 }
